@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prompt TOKENS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Prompt TOKENS</h1>
+  </header>
+
+  <main>
+    <button onclick="location.href='page1.html'">More specific information</button>
+    <button onclick="location.href='page2.html'">Coming soon</button>
+    <button onclick="location.href='https://miclasher.github.io/lora-training-tutorial/'">LowhRa Tuywtoriawl</button>
+    <button onclick="location.href='tutorial2.html'">Coming soon</button>
+      <br><br><br><h2>For who this tutorial?</h2>
+      <h4>This tutorial is for those who have already installed <a href = "https://github.com/AUTOMATIC1111/stable-diffusion-webui">automatic1111</a></h><br>
+      <h2>What means "Prompt TOKENS"?</h2>
+      <h4>Prompt TOKENS - some words written by you that tell the neural network what you want.</h4><br>
+
+      <h2>Where I can write it?</h2>
+      <h4>In the first text box</h4>
+      <h4>Second one is for a "Negative Prompt TOKENS"</h4>
+      <div class="image-container"><img src="images/Text box.png"></div>
+
+      <h2>What means "Negative Prompt TOKENS"?</h2>
+      <h4>So, it is what you wouldn't want to see in the resulting picture</h4><br>
+      <h2>Well, let's move on to something more complicated</h2>
+      <h4>The Prompt must have a certain structure, the words must be written in English and separted by commas.</h4>
+      <h4>Also, you can specify the importance of the word for the picture using "()" or "(word:1.2)"</h4>
+
+      <div class="row">
+        <div class="column1">
+          <img src="images/(dark shot_1.1), epic realistic, a europian woman, casual dressed, (pink hair_0.9), beautiful face, (natural skin texture, hyper.png" style="width:100%"><br><h4>a europian woman, casual dressed, (pink hair:0.9), beautiful face</h4>
+        </div>
+        <div class="column1">
+          <img src="images/(dark shot_1.1), epic realistic, a europian woman, casual dressed, (pink hair_1.3), beautiful face, (natural skin texture, hyper.png" style="width:100%"><br><h4>a europian woman, casual dressed, (pink hair:1.3), beautiful face</h4>
+        </div>
+      </div> 
+      <h4>"Prompt TOKENS" which have been used for this picture - casual</h4>
+      <h4>So, let's see how hard tokens look like</h4>
+      <div class="row">
+        <div class="column2">
+          <img src="images/(1)_dark_shot_1_1,_epic_realistic,_a_europian_woman.png"
+           style="width:100%"><br><h4>(dark shot_1.1), epic realistic, a europian woman, from side, (mohawk [green_pink_0.6] hair_1.2), dark red jacket, short shorts</h4>
+        </div>
+        <div class="column2">
+          <img src="images/(2)_dark_shot_1_1,_epic_realistic,_a_europian_woman.png"
+           style="width:100%"><br><h4>(dark shot_1.1), epic realistic, a europian woman, from side, (mohawk [green_pink_0.6] hair_1.2), dark red jacket, short shorts</h4>
+        </div>
+        <div class="column2">
+          <img src="images/(3)(dark shot_1.1), epic realistic, a europian woman, from side, (mohawk [green_pink_0.6] hair_1.2), dark red jacket, short shorts,.png"
+           style="width:100%"><br><h4>(dark shot_1.1), epic realistic, a europian woman, from side, (mohawk [green_pink_0.6] hair_1.2), dark red jacket, short shorts</h4>
+        </div>
+      </div>
+      <h4>There you can see interesting TOKEN "(mohawk [green:pink:0.6] hair_1.2)"</h4>
+      <h4>[green:pink:0.6] This part of TOKEN tells the neural network that it should generate 60% of the steps green and then spend the remaining 40% of the steps generating pink.</h4>
+</main>
+    </body>
+</html>
